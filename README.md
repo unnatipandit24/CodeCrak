@@ -1,50 +1,107 @@
-# Welcome to your Expo app 👋
+# CodeCrak
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+CodeCrak is a **developer-focused mobile application** that helps students and early-career engineers present their **coding profiles, skills, and personality** in one unified platform. The app bridges the gap between **candidates and recruiters** by combining competitive programming stats, and video introductions into a single shareable profile.
 
-## Get started
+---
 
-1. Install dependencies
+## Problem Statement
 
-   ```bash
-   npm install
-   ```
+Recruiters often rely only on resumes, which fail to reflect a candidate’s **actual coding consistency, problem-solving skills, and growth** across platforms like LeetCode and Codeforces. Candidates, on the other hand, struggle to present all their achievements in one place.
 
-2. Start the app
+**CodeCrak solves this by creating a single, verified developer profile powered by real-time data.**
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## ✨ Key Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* 🔐 **Secure Authentication** using Firebase (Login / Signup)
+* 📊 **LeetCode Profile Integration**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+  * Problems solved
+  * Easy / Medium / Hard breakdown
+  * Contest rating & ranking
+* 🏁 **Codeforces Profile Integration**
 
-## Get a fresh project
+  * Current rating
+  * Global ranking
+  * Total problems solved
+* 📄 **Resume Upload & Profile Builder**
+* 🎥 **Video Introduction** to showcase communication skills
+* 🧑‍💼 **Role-based Profiles** (Student / Recruiter)
+* ☁️ **Persistent Data Storage** using Firebase
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## 🛠 Tech Stack
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Frontend
 
-## Learn more
+* **React Native**
+* **TypeScript**
+* **Expo**
 
-To learn more about developing your project with Expo, look at the following resources:
+### Backend & Services
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+* **Firebase Authentication**
+* **Firebase Firestore**
 
-## Join the community
+### APIs Used
 
-Join our community of developers creating universal apps.
+* **LeetCode API** (via community wrapper)
+* **Codeforces Official API**
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## 🏗 App Architecture
+
+* Modular API layer (`leetcodeApi.ts`, `codeforcesApi.ts`)
+* Firebase used for:
+
+  * User authentication
+  * Storing usernames, roles, and profile metadata
+* Platform stats fetched dynamically using usernames
+* Clean separation of:
+
+  * UI Components
+  * API Services
+  * Screens & Navigation
+
+---
+
+## 📱 Screens Implemented
+
+* Login / Signup Screen
+* Profile Setup Screen
+* Competitive Programming Dashboard
+* Project Display Dashboard
+* Video Introduction Upload
+* Recruiter View (read-only candidate profiles)
+
+---
+
+## 🔒 Security & Best Practices
+
+* Sensitive keys stored in `.env` (not committed)
+* Firebase rules to restrict unauthorized access
+* API calls handled via service layers
+
+---
+
+## 🎯 Use Cases
+
+* Students showcasing verified coding skills
+* Recruiters filtering candidates based on real performance
+* Hackathon participants sharing live coding stats
+* Portfolio alternative for software engineers
+
+---
+
+## 🚧 Future Enhancements
+
+* GitHub profile integration
+* Skill-based candidate ranking
+* In-app messaging between recruiters and candidates
+* AI-based profile analysis & suggestions
+
+---
+
