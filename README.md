@@ -12,27 +12,27 @@ Recruiters often rely only on resumes, which fail to reflect a candidate’s **a
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-* 🔐 **Secure Authentication** using Firebase (Login / Signup)
-* 📊 **LeetCode Profile Integration**
+* **Secure Authentication** using Firebase (Login / Signup)
+* **LeetCode Profile Integration**
 
   * Problems solved
   * Easy / Medium / Hard breakdown
   * Contest rating & ranking
-* 🏁 **Codeforces Profile Integration**
+* **Codeforces Profile Integration**
 
   * Current rating
   * Global ranking
   * Total problems solved
-* 📄 **Resume Upload & Profile Builder**
-* 🎥 **Video Introduction** to showcase communication skills
-* 🧑‍💼 **Role-based Profiles** (Student / Recruiter)
-* ☁️ **Persistent Data Storage** using Firebase
+* **Profile Builder**
+* **Video Introduction** to showcase communication skills
+* **Role-based Profiles** (Student / Recruiter)
+* **Persistent Data Storage** using Firebase
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -52,7 +52,7 @@ Recruiters often rely only on resumes, which fail to reflect a candidate’s **a
 
 ---
 
-## 🏗 App Architecture
+## App Architecture
 
 * Modular API layer (`leetcodeApi.ts`, `codeforcesApi.ts`)
 * Firebase used for:
@@ -68,7 +68,7 @@ Recruiters often rely only on resumes, which fail to reflect a candidate’s **a
 
 ---
 
-## 📱 Screens Implemented
+## Screens Implemented
 
 * Login / Signup Screen
 * Profile Setup Screen
@@ -79,7 +79,7 @@ Recruiters often rely only on resumes, which fail to reflect a candidate’s **a
 
 ---
 
-## 🔒 Security & Best Practices
+## Security & Best Practices
 
 * Sensitive keys stored in `.env` (not committed)
 * Firebase rules to restrict unauthorized access
@@ -87,7 +87,7 @@ Recruiters often rely only on resumes, which fail to reflect a candidate’s **a
 
 ---
 
-## 🎯 Use Cases
+##  Use Cases
 
 * Students showcasing verified coding skills
 * Recruiters filtering candidates based on real performance
@@ -96,7 +96,7 @@ Recruiters often rely only on resumes, which fail to reflect a candidate’s **a
 
 ---
 
-## 🚧 Future Enhancements
+## Future Enhancements
 
 * GitHub profile integration
 * Skill-based candidate ranking
