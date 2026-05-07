@@ -103,5 +103,8 @@ Recruiters often rely only on resumes, which fail to reflect a candidate’s **a
 * In-app messaging between recruiters and candidates
 * AI-based profile analysis & suggestions
 
+
+![image alt] (https://github.com/unnatipandit24/CodeCrak/blob/91bdb8fc41a5bb98f388fc0c1ce7e8df82da66c7/CodeCrak-profile.jpeg)
+
 ---
 
